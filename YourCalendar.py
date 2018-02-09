@@ -4,6 +4,7 @@ try:
     import os
     from PIL import Image, ImageDraw, ImageFont
 except Exception as exc:
+    print('Game modules not found: "{}"'.format(exc), file=sys.stderr)
     sys.exit(1)
 
 
@@ -25,10 +26,11 @@ class Painter:
             font_for_title = ImageFont.truetype("/usr/share/fonts/truetype/freefont/FreeMono.ttf", 18)
         except Exception as e:
             try:
-                font = ImageFont.truetype("FreeMono.ttf", 14)
-                font_for_title = font = ImageFont.truetype("FreeMono.ttf", 18)
+                font = ImageFont.truetype("arial.ttf", 12)
+                font_for_title = font = ImageFont.truetype("arial.ttf", 16)
             except Exception as exc:
-                return
+                print("Failed to find the font")
+                sys.exit(1)
         for i in range(0, len(days)):
             width = (days[i] - 1) * self.width_side
             height = week * self.height_side
