@@ -1,7 +1,7 @@
 # YourCalendar
 Allows you to create .png images of the calendar, moreover, you can immediately mark in it those days that are important to you.<br>
 ### Example<br>
-![](https://pp.userapi.com/c841222/v841222360/697a2/8wqoP_lxK-g.jpg)
+![](https://pp.userapi.com/c841222/v841222360/697a2/8wqoP_lxK-g.jpg)<br>
 __Warnging__: Powered by Python version 3.5 and above<br>
 ### Used third-party libraries:
 #### [Pillow](https://pypi.python.org/pypi/Pillow/3.3.1)<br>
